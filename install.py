@@ -1,10 +1,9 @@
 import os
-import re
 
 os.system("pyinstaller --onefile --icon=icon.ico server.py")
 
 pa = f"{os.getcwd()}\dist\server.exe"
-path = re.escape(pa)
+path = pa.replace('\\', '\\\\')
 
 text = f'''Windows Registry Editor Version 5.00
 
@@ -12,7 +11,7 @@ text = f'''Windows Registry Editor Version 5.00
 @="&Open Localhost"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Localhost File Sharing\command]
-@="{path}"
+@={path}
 '''
 
 with open("temporary.reg", "w") as tf:
