@@ -1,5 +1,6 @@
 # Manish
-# Simple local server to share file via wifi network.
+# Simple local server to share files via wifi network.
+# Program added in windows context-menu.
 
 -> Must have installed python and pyinstaller.
 -> Choose a safe place to clone this, otherwise problem may occur.
