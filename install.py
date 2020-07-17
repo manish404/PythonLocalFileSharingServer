@@ -11,7 +11,7 @@ text = f'''Windows Registry Editor Version 5.00
 @="&Open Localhost"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Localhost File Sharing\command]
-@={path}
+@="{path}"
 '''
 
 with open("temporary.reg", "w") as tf:
