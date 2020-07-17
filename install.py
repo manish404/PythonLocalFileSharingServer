@@ -1,8 +1,10 @@
 import os
+import re
 
 os.system("pyinstaller --onefile --icon=icon.ico server.py")
 
-path = f"{os.getcwd()}\dist\server.exe"
+pa = f"{os.getcwd()}\dist\server.exe"
+path = re.escape(pa)
 
 text = f'''Windows Registry Editor Version 5.00
 
