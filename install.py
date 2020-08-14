@@ -9,6 +9,7 @@ text = f'''Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Localhost File Sharing]
 @="&Open Localhost"
+"Icon"="{path}"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Localhost File Sharing\command]
 @="{path}"
