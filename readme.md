@@ -1,4 +1,4 @@
-# Manish Sharma
+# Manish
 # Simple local server to share file via wifi network.
 
 -> Must have installed python and pyinstaller.  
